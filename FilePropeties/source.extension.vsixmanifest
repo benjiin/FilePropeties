@@ -5,7 +5,7 @@
         <DisplayName>FilePropeties</DisplayName>
         <Description xml:space="preserve">This extension is only a first test of an intern. In the Menu you will get a Info about your current .NET Framework.</Description>
         <License>Resources\LICENSE</License>
-        <Icon>Resources\icon.png</Icon>
+        <Icon>icon.png</Icon>
         <PreviewImage>Resources\Preview.png</PreviewImage>
         <Tags>file, propeties</Tags>
     </Metadata>

@@ -69,8 +69,50 @@
       <Link>Resources\LICENSE</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="hello-world.html" />
+    <Content Include="images\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="sdk\node_modules\vss-sdk\lib\VSS.SDK.js" />
+    <Content Include="sdk\node_modules\vss-sdk\lib\VSS.SDK.min.js" />
+    <Content Include="sdk\node_modules\vss-web-extension-sdk\img\dependencies.png" />
+    <Content Include="sdk\node_modules\vss-web-extension-sdk\lib\VSS.SDK.js" />
+    <Content Include="sdk\node_modules\vss-web-extension-sdk\lib\VSS.SDK.min.js" />
+    <Content Include="sdk\scripts\VSS.SDK.js" />
+    <None Include="vss-extension.json" />
     <None Include="Key.snk" />
     <None Include="packages.config" />
+    <None Include="sdk\node_modules\vss-sdk\.npmignore" />
+    <None Include="sdk\node_modules\vss-sdk\bower.json" />
+    <None Include="sdk\node_modules\vss-sdk\package.json" />
+    <None Include="sdk\node_modules\vss-sdk\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\bower.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\LICENSE" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\LICENSE" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\package.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jquery\LICENSE" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jquery\package.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jquery\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\knockout\LICENSE" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\knockout\package.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\knockout\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\mousetrap\LICENSE" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\mousetrap\package.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\mousetrap\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\q\package.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\q\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\q\types-metadata.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\react\LICENSE" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\react\package.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\react\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\requirejs\LICENSE" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\requirejs\package.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\requirejs\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\package.json" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\README.md" />
+    <None Include="sdk\node_modules\vss-web-extension-sdk\tsconfig.json" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -100,6 +142,10 @@
       <HintPath>..\packages\Microsoft.VisualStudio.Imaging.15.0.26606\lib\net45\Microsoft.VisualStudio.Imaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.Modeling.SDK.Integration.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Modeling.SDK.Integration.14.0, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Modeling.SDK.Integration.Shell.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Modeling.SDK.Integration.Shell.15.0, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <HintPath>..\packages\Microsoft.VisualStudio.OLE.Interop.7.10.6070\lib\Microsoft.VisualStudio.OLE.Interop.dll</HintPath>
       <Private>True</Private>
@@ -164,6 +210,8 @@
       <HintPath>..\packages\Microsoft.VisualStudio.Validation.15.3.15\lib\net45\Microsoft.VisualStudio.Validation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VSSDK.TestHostFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VSSDK.UnitTestLibrary, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -191,10 +239,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="Preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -203,6 +247,23 @@
     <Content Include="Resources\FilePropetiesCommandPackage.ico" />
     <Content Include="Resources\icon.png" />
     <Content Include="Resources\Preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="sdk\node_modules\vss-sdk\typings\tfs.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-sdk\typings\vss.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\index.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jquery\index.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\knockout\index.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\mousetrap\index.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\q\index.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\react\global.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\react\index.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\requirejs\index.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\typings\charts.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\typings\index.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\typings\rmo.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\typings\tfs.d.ts" />
+    <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\typings\vss.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
