@@ -74,12 +74,42 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="node_modules\vss-web-extension-sdk\img\dependencies.png" />
+    <Content Include="node_modules\vss-web-extension-sdk\lib\VSS.SDK.js" />
+    <Content Include="node_modules\vss-web-extension-sdk\lib\VSS.SDK.min.js" />
     <Content Include="sdk\node_modules\vss-sdk\lib\VSS.SDK.js" />
     <Content Include="sdk\node_modules\vss-sdk\lib\VSS.SDK.min.js" />
     <Content Include="sdk\node_modules\vss-web-extension-sdk\img\dependencies.png" />
     <Content Include="sdk\node_modules\vss-web-extension-sdk\lib\VSS.SDK.js" />
     <Content Include="sdk\node_modules\vss-web-extension-sdk\lib\VSS.SDK.min.js" />
     <Content Include="sdk\scripts\VSS.SDK.js" />
+    <None Include="node_modules\vss-web-extension-sdk\bower.json" />
+    <None Include="node_modules\vss-web-extension-sdk\LICENSE" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\LICENSE" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\package.json" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\README.md" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\jquery\LICENSE" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\jquery\package.json" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\jquery\README.md" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\knockout\LICENSE" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\knockout\package.json" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\knockout\README.md" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\mousetrap\LICENSE" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\mousetrap\package.json" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\mousetrap\README.md" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\q\package.json" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\q\README.md" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\q\types-metadata.json" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\react\LICENSE" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\react\package.json" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\react\README.md" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\requirejs\LICENSE" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\requirejs\package.json" />
+    <None Include="node_modules\vss-web-extension-sdk\node_modules\%40types\requirejs\README.md" />
+    <None Include="node_modules\vss-web-extension-sdk\package.json" />
+    <None Include="node_modules\vss-web-extension-sdk\README.md" />
+    <None Include="node_modules\vss-web-extension-sdk\tsconfig.json" />
+    <None Include="task.json" />
     <None Include="vss-extension.json" />
     <None Include="Key.snk" />
     <None Include="packages.config" />
@@ -249,6 +279,19 @@
     <Content Include="Resources\Preview.png" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\node_modules\%40types\jquery\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\node_modules\%40types\knockout\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\node_modules\%40types\mousetrap\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\node_modules\%40types\q\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\node_modules\%40types\react\global.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\node_modules\%40types\react\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\node_modules\%40types\requirejs\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\charts.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\rmo.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\tfs.d.ts" />
+    <TypeScriptCompile Include="node_modules\vss-web-extension-sdk\typings\vss.d.ts" />
     <TypeScriptCompile Include="sdk\node_modules\vss-sdk\typings\tfs.d.ts" />
     <TypeScriptCompile Include="sdk\node_modules\vss-sdk\typings\vss.d.ts" />
     <TypeScriptCompile Include="sdk\node_modules\vss-web-extension-sdk\node_modules\%40types\jqueryui\index.d.ts" />
@@ -277,6 +320,11 @@
     <Error Condition="!Exists('..\packages\Microsoft.VSSDK.BuildTools.15.1.192\build\Microsoft.VSSDK.BuildTools.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.VSSDK.BuildTools.15.1.192\build\Microsoft.VSSDK.BuildTools.targets'))" />
   </Target>
   <Import Project="..\packages\Microsoft.VSSDK.BuildTools.15.1.192\build\Microsoft.VSSDK.BuildTools.targets" Condition="Exists('..\packages\Microsoft.VSSDK.BuildTools.15.1.192\build\Microsoft.VSSDK.BuildTools.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties vss-extension_1json__JSONSchema="http://json.schemastore.org/bootstraprc" />
+    </VisualStudio>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
