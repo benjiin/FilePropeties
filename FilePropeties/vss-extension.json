@@ -1,10 +1,10 @@
 ﻿{
   "manifestVersion": 1,
   "id": "sample-extension",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "My first sample extension",
   "description": "A sample Visual Studio Services extension.",
-  "publisher": "fabrikamdev",
+  "publisher": "thisID",
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
